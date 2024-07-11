@@ -27,7 +27,7 @@ void setup()
 void loop()
 {
   updateValues();
-  broadcastData(); // Actually send data (all the time)
+  broadcastValues(); // Actually send data (all the time)
   // printValues(); // For debug
   delay(10);
 }
@@ -44,7 +44,7 @@ void updateValues()
   }
 }
 
-void broadcastData()
+void broadcastValues()
 {
   String builtString = String("");
 

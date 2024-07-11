@@ -77,6 +77,8 @@ deej uses a simple YAML-formatted configuration file named [`config.yaml`](./con
 
 The config file determines which applications (and devices) are mapped to which sliders, and which parameters to use for the connection to the Arduino board, as well as other user preferences.
 
+The index in the mapping corresponds to the potentiometer's position, starting from 0. The firmware for this will send the values of the inputs in the following pin order: A0, A1, A2, A3, A6, A7, A8, A9.
+
 **This file auto-reloads when its contents are changed, so you can change application mappings on-the-fly without restarting deej.**
 
 It looks like this:
