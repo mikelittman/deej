@@ -51,6 +51,7 @@ void broadcastValues()
   for (int i = 0; i < NUM_SLIDERS; i++)
   {
     builtString += String(analogSliderValues[i]);
+    builtString += String("|");
   }
 
   for (int i = 0; i < NUM_DIALS; i++)
